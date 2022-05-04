@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div className="app">
             <h1>hello</h1>
-
+            {console.log("123")}
             <Button variant="secondary">Secondary</Button>{' '}
         </div>
     )
