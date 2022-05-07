@@ -35,33 +35,6 @@ a {
   }
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-.app {
-  width: 1100px;
-  margin: 0 auto;
-  padding: 50px 0 50px 0;
-  position: relative;
-
-  .bg-decoration {
-    position: absolute;
-    right: -174px;
-    bottom: -70px;
-    z-index: -1;
-  }
-}
-
-main {
-  margin-top: 50px;
-  position: relative;
-}
 
