@@ -1,21 +1,21 @@
 import React from 'react';
 import "./main.scss"
 import {Carousel} from "react-bootstrap";
-import logo from "../../images/logo.png"
 import FormInput from "../../components/FormInput/FormInput";
 import * as Icon from 'react-bootstrap-icons';
-import weth from "../../images/weather1.jpg"
-import weth2 from "../../images/weth2.jpg"
-import weth3 from "../../images/weth3.jpg"
-import temper from "../../images/temp.jpg"
-import graf from "../../images/graf.jpg"
+
+
 
 const Main = () => {
+
+    const style = {
+        backgroundImage: "url(./images/bg.jpg)"
+    };
     return (
         <div className="mainPage">
             <header>
                 <div className="headerLogo">
-                    <img src={logo} alt="logo"/>
+                    <img src="./images/logo.png" alt="logo"/>
                     <h1>Погода у твоєму місті</h1>
                 </div>
                 <div className="changeLang">
@@ -25,7 +25,7 @@ const Main = () => {
                 </div>
             </header>
             <main>
-                <div className="FormInput">
+                <div className="FormInput" style={style}>
                     <FormInput placeholder="Find your location...." value="Знайти"/>
                 </div>
                 <div className="mainContent">
@@ -37,8 +37,8 @@ const Main = () => {
                                 всю
                                 планету. Вони завдають значних збитків і призводять до людських жертв.
                             </h3>
-                            <div><img src={weth} className="img1" alt="#"/>
-                                <img src={weth2} className="img2" alt="#"/>
+                            <div><img src="./images/weather1.jpg" className="img1" alt="#"/>
+                                <img src="./images/weth2.jpg" className="img2" alt="#"/>
                             </div>
                         </div>
                         <div className="forecast-container2">
@@ -46,7 +46,7 @@ const Main = () => {
                                 від
                                 сильних штормів, а Австралія від екстремальної спеки, що призвела до масових лісових
                                 пожеж.</p>
-                            <img src={weth3} alt="#"/>
+                            <img src="./images/weth3.jpg" alt="#"/>
                             <p>Приборкати погоду неможливо, але можна передбачити і пом'якшити її екстремальні прояви. І
                                 саме тут на допомогу приходить прогноз погоди. <br/>
                                 Як його складають? І чому він не завжди точний?</p>
@@ -56,21 +56,21 @@ const Main = () => {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100 h-50"
-                                        src={weth3}
+                                        src="./images/weth3.jpg"
                                         alt="First slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100 h-50"
-                                        src={weth2}
+                                        src="./images/weth2.jpg"
                                         alt="Second slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100 h-50"
-                                        src={weth3}
+                                        src="./images/weth3.jpg"
                                         alt="Third slide"
                                     />
                                 </Carousel.Item>
@@ -79,8 +79,8 @@ const Main = () => {
                         <div className="forecast-container3">
                             <p>Зміна клімату та глобальне потепління роблять можливим пляжний відпочинок навіть в
                                 Алясці.</p>
-                            <img src={temper} alt="#"/>
-                            <img src={graf} alt="#"/>
+                            <img src="./images/temp.jpg" alt="#"/>
+                            <img src="./images/graf.jpg" alt="#"/>
                         </div>
                     </div>
                 </div>

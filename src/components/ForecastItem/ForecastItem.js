@@ -1,7 +1,5 @@
 import React from 'react';
-import umberella from "../../images/icon-umberella.png"
-import wind from "../../images/icon-wind.png"
-import ucompass from "../../images/icon-compass.png"
+
 import "./ForecastItem.scss"
 
 const ForecastItem = () => {
@@ -17,9 +15,9 @@ const ForecastItem = () => {
                     <div className="degree">
                         <div className="num">23<sup>o</sup>C</div>
                     </div>
-                    <span><img src={umberella} alt="#"/>20%</span>
-                    <span><img src={wind} alt="#"/>18km/</span>
-                    <span><img src={ucompass} alt="#"/>East</span>
+                    <span><img src="./images/icon-umberella.png" alt="#"/>20%</span>
+                    <span><img src="./images/icon-wind.png" alt="#"/>18km/</span>
+                    <span><img src="./images/icon-compass.png" alt="#"/>East</span>
                 </div>
             </div>
             <div className="forecast">
@@ -32,9 +30,9 @@ const ForecastItem = () => {
                     <div className="degree">
                         <div className="num">23<sup>o</sup>C</div>
                     </div>
-                    <span><img src={umberella} alt="#"/>20%</span>
-                    <span><img src={wind} alt="#"/>18km/</span>
-                    <span><img src={ucompass} alt="#"/>East</span>
+                    <span><img src="./images/icon-umberella.png" alt="#"/>20%</span>
+                    <span><img src="./images/icon-wind.png" alt="#"/>18km/</span>
+                    <span><img src="./images/icon-compass.png" alt="#"/>East</span>
                 </div>
             </div>
             <div className="forecast">
@@ -47,9 +45,9 @@ const ForecastItem = () => {
                     <div className="degree">
                         <div className="num">23<sup>o</sup>C</div>
                     </div>
-                    <span><img src={umberella} alt="#"/>20%</span>
-                    <span><img src={wind} alt="#"/>18km/</span>
-                    <span><img src={ucompass} alt="#"/>East</span>
+                    <span><img src="./images/icon-umberella.png" alt="#"/>20%</span>
+                    <span><img src="./images/icon-wind.png" alt="#"/>18km/</span>
+                    <span><img src="./images/icon-compass.png" alt="#"/>East</span>
                 </div>
             </div>
             <div className="forecast">
@@ -62,9 +60,9 @@ const ForecastItem = () => {
                     <div className="degree">
                         <div className="num">23<sup>o</sup>C</div>
                     </div>
-                    <span><img src={umberella} alt="#"/>20%</span>
-                    <span><img src={wind} alt="#"/>18km/</span>
-                    <span><img src={ucompass} alt="#"/>East</span>
+                    <span><img src="./images/icon-umberella.png" alt="#"/>20%</span>
+                    <span><img src="./images/icon-wind.png" alt="#"/>18km/</span>
+                    <span><img src="./images/icon-compass.png" alt="#"/>East</span>
                 </div>
             </div>
         </div>

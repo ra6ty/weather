@@ -1,15 +1,22 @@
 import React from 'react';
 import "./Weather.scss"
 import Forecast from "../../components/Forecast/Forecast";
-import logo from "../../images/logo.png";
+
 import * as Icon from "react-bootstrap-icons";
+import * as url from "url";
 
 const Weather = () => {
+
+
+    const style = {
+       backgroundImage: "url(./images/bg.jpg)"
+    };
+
     return (
         <div className="Weather">
             <header>
                 <div className="headerLogo">
-                    <img src={logo} alt="logo"/>
+                    <img src="./images/logo.png" alt="logo"/>
                     <h1>Погода у твоєму місті</h1>
                 </div>
                 <div className="changeLang">
@@ -18,7 +25,7 @@ const Weather = () => {
                     <button>EN</button>
                 </div>
             </header>
-            <main><Forecast/></main>
+            <main style={style}><Forecast/></main>
 
             <footer className="footerContent">
                 <p>Ми в соціальних мережах</p>
