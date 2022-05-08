@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 const Main = () => {
+    console.log("12")
     return (
         <div>
             <Header to="weather" value="Дізнатись погоду"/>
