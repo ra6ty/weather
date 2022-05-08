@@ -1,16 +1,16 @@
 import React from 'react';
 import "./main.scss"
 import {Carousel} from "react-bootstrap";
-import logo from "../../resources/img/logo.png"
+import logo from "../../images/logo.png"
 import FormInput from "../../components/FormInput/FormInput";
 import * as Icon from 'react-bootstrap-icons';
-import weth from "../../resources/img/weather1.jpg"
-import weth2 from "../../resources/img/weth2.jpg"
-import weth3 from "../../resources/img/weth3.jpg"
-import temper from "../../resources/img/temp.jpg"
-import graf from "../../resources/img/graf.jpg"
+import weth from "../../images/weather1.jpg"
+import weth2 from "../../images/weth2.jpg"
+import weth3 from "../../images/weth3.jpg"
+import temper from "../../images/temp.jpg"
+import graf from "../../images/graf.jpg"
 
-const main = () => {
+const Main = () => {
     return (
         <div className="mainPage">
             <header>
@@ -106,4 +106,4 @@ const main = () => {
     );
 };
 
-export default main;
+export default Main;

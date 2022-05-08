@@ -2,14 +2,19 @@ import React from 'react';
 import "./App.scss"
 import Main from "../../pages/Main/Main";
 import Weather from "../../pages/Weather/Weather";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-const app = () => {
+const App = () => {
     return (
         <div className="app">
-            <Main/>
-            <Weather/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={< Main/>}/>
+                    <Route path="weather" element={<Weather/>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
     )
 }
 
-export default app;
+export default App;

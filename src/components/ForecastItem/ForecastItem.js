@@ -1,7 +1,7 @@
 import React from 'react';
-import umberella from "../../resources/img/icon-umberella.png"
-import wind from "../../resources/img/icon-wind.png"
-import ucompass from "../../resources/img/icon-compass.png"
+import umberella from "../../images/icon-umberella.png"
+import wind from "../../images/icon-wind.png"
+import ucompass from "../../images/icon-compass.png"
 import "./ForecastItem.scss"
 
 const ForecastItem = () => {

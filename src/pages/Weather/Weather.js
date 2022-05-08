@@ -1,8 +1,9 @@
 import React from 'react';
 import "./Weather.scss"
 import Forecast from "../../components/Forecast/Forecast";
-import logo from "../../resources/img/logo.png";
+import logo from "../../images/logo.png";
 import * as Icon from "react-bootstrap-icons";
+
 const Weather = () => {
     return (
         <div className="Weather">
@@ -17,7 +18,7 @@ const Weather = () => {
                     <button>EN</button>
                 </div>
             </header>
-            <main>    <Forecast/></main>
+            <main><Forecast/></main>
 
             <footer className="footerContent">
                 <p>Ми в соціальних мережах</p>
