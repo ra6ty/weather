@@ -1,7 +1,6 @@
 import React from 'react';
 import "./FormInput.scss"
 
-
 const formInput = ({placeholder}) => {
     return (
         <form className="form">
