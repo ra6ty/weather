@@ -1,55 +1,59 @@
-
 .forecastContainer {
   display: flex;
+  justify-content: space-between;
 
-justify-content: space-between;
-& .forecast {
-  margin-top: 30px;
-  color: #bfc1c8;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5;
-  width: 310px;
-  background-color: #323544;
-  border-radius: 30px;
-  &-header {
-    justify-content: space-between;
-    display: flex;
+  & .forecast {
+    margin-top: 30px;
     color: #bfc1c8;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 1.5;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    border-radius: 35px;
-  }
+    width: 310px;
+    background-color: #323544;
+    border-radius: 30px;
 
-  &-content {
-    text-align: left;
-
-    padding: 10px 30px 30px 30px;
-    & .location{
-      font-size: 39px;
-      font-weight: 400;
+    &-header {
+      justify-content: space-between;
+      display: flex;
+      color: #bfc1c8;
+      font-size: 17px;
+      line-height: 1.5;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      border-radius: 35px;
     }
-    & .degree{
-      padding: 0;
-      line-height: 1;
-      margin: 0 0  1rem 0;
-      .num{
-        margin-right: 30px;
-        font-size: 90px;
-        font-weight: 700;
-        color: white;
+
+    &-content {
+      text-align: left;
+      padding: 10px 30px 30px 30px;
+
+      & .location {
+        font-size: 39px;
+        font-weight: 400;
+      }
+
+      & .degree {
+        padding: 0;
+        line-height: 1;
+        margin: 0 0 1rem 0;
+
+        .num {
+          margin-right: 30px;
+          font-size: 90px;
+          font-weight: 700;
+          color: white;
+        }
+      }
+
+      & span {
+        margin-right: 25px;
+
+        img {
+          margin-right: 5px;
+          vertical-align: middle;
+          width: 25px;
+        }
       }
     }
-    & span{
-      margin-right: 25px;
-      img{
-        margin-right: 5px;
-        vertical-align: middle;
-        width: 25px;
-      }
-    }
   }
-}}
+}

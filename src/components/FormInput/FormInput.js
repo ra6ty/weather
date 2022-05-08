@@ -1,13 +1,12 @@
 import React from 'react';
 import "./FormInput.scss"
-import {Link} from "react-router-dom";
 
 
-const formInput = ({placeholder, value}) => {
+const formInput = ({placeholder}) => {
     return (
         <form className="form">
             <input placeholder={placeholder} type="text"/>
-            <Link to="/weather" className='button' type="button">{value}</Link>
+            <button className='button' type="button">Знайти</button>
         </form>
     );
 };

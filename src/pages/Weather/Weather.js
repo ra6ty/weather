@@ -1,22 +1,26 @@
 import React from 'react';
 import "./Weather.scss"
 import ForecastItem from "../../components/ForecastItem/ForecastItem";
+import FormInput from "../../components/FormInput/FormInput";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Weather = () => {
     const style = {
-       backgroundImage: "url(./images/bg.jpg)"
+        backgroundImage: "url(./images/bg.jpg)"
     };
-
-    // Видалити обгортку <div className="Weather"> і пофіксити стилі
-
     return (
-        <div className="Weather">
-            <main style={style}>
-                <div className="forecast-container">
-                    <ForecastItem/>
+        <div>
+            <Header  to="" value="Вернутись на головну"/>
+            <div style={style} className="Weather">
+                <div className="FormInput">
+                    <FormInput placeholder="Find your location...." value="Знайти"/>
                 </div>
-            </main>
-
+                <div className="forecast-container">
+                    {/*<ForecastItem/>*/}
+                </div>
+            </div>
+            <Footer/>
         </div>
     );
 };

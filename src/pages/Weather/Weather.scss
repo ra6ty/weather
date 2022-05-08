@@ -1,9 +1,11 @@
 .Weather {
-  main {
     padding: 115px 5rem 110px 5rem;
     background-color: #262936;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+    min-height: 500px;
+}
+.FormInput {
+  margin-bottom: 30px;
 }

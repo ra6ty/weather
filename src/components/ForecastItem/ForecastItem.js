@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "./ForecastItem.scss"
 
 const ForecastItem = () => {
@@ -66,7 +65,6 @@ const ForecastItem = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
