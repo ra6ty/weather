@@ -17,7 +17,7 @@ const Weather = () => {
                     <FormInput placeholder="Find your location...." value="Знайти"/>
                 </div>
                 <div className="forecast-container">
-                    {/*<ForecastItem/>*/}
+                    <ForecastItem/>
                 </div>
             </div>
             <Footer/>
