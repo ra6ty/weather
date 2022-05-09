@@ -11,7 +11,7 @@ const Weather = () => {
     };
     return (
         <div>
-            <Header  to="" value="Вернутись на головну"/>
+            <Header  to="" value="Повернутись"/>
             <div style={style} className="Weather">
                 <div className="FormInput">
                     <FormInput placeholder="Find your location...." value="Знайти"/>
