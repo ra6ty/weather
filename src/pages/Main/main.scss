@@ -15,8 +15,8 @@
       display: flex;
       margin-top: 30px;
       justify-content: space-between;
-  margin-bottom: 2rem
-    ;
+      margin-bottom: 2rem;
+
       & p {
         font-weight: 400;
         letter-spacing: 1px;
@@ -141,7 +141,6 @@
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1250px) {
   .mainContent .forecast-container {
     flex-wrap: wrap;
@@ -169,7 +168,6 @@
       font-size: 18px;
       line-height: 1.2;
       letter-spacing: normal;
-
     }
 
     & img {
@@ -198,6 +196,7 @@
   }
   .mainContent .forecast-container div {
     flex-direction: row;
+
     & img {
       width: 500px;
       height: 300px;

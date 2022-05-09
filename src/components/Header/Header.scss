@@ -63,12 +63,12 @@ header {
   }
 }
 
-
 @media (min-width: 320px) and (max-width: 787px) {
   header {
     padding: 1rem;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
+
     .headerLogo h1 {
       display: none;
     }
@@ -85,12 +85,10 @@ header {
   header .changeLang {
     justify-content: center;
     padding: 1rem;
-
   }
   header .changeLang p {
     line-height: normal;
   }
-
 }
 
 @media (min-width: 767px) and (max-width: 1420px) {

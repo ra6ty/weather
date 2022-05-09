@@ -34,19 +34,21 @@
     }
   }
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .footerContent {
     padding: 2rem 1rem;
+
     & p {
       font-size: 24px;
       line-height: 1.2;
-     text-align: center;
+      text-align: center;
     }
+
     & .social-links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
   }
-
 }
