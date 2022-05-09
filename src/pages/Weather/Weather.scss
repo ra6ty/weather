@@ -1,11 +1,54 @@
 .Weather {
-    padding: 115px 5rem 110px 5rem;
-    background-color: #262936;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
+  padding: 115px 5rem 110px 5rem;
+  background-color: #262936;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
 }
+
 .FormInput {
   margin-bottom: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 758px) {
+  .Weather {
+    padding: 2rem;
+  }
+  .form {
+    min-width: 300px;
+  }
+  .form .button {
+    padding: 0 20px !important;
+  }
+  .forecastContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .forecastContainer .forecast {
+    width: 320px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .Weather {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 758px) and (max-width: 1440px) {
+  .forecastContainer {
+    flex-wrap: wrap;
+    justify-content: center !important;
+
+    & .forecast {
+      margin: 1rem !important;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .Weather {
+    min-height: 750px;
+  }
 }
