@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 * {
- font-family: 'Roboto', sans-serif;
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -15,42 +15,29 @@ h3,
 h4,
 h5,
 h6 {
- margin: 0;
+  margin: 0;
 }
 
 a {
- text-decoration: none;
- color: inherit;
- display: inline-block;
-
- &:hover {
   text-decoration: none;
   color: inherit;
- }
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .app {
- width: 100%;
- color: azure;
+  width: 100%;
+  color: azure;
 
-}
-
-
-@media (max-width: 479px) {
-
-}
-
-
-@media (min-width: 480px) and (max-width: 767px) {}
-
-
-@media (min-width: 768px) and (max-width: 979px) {}
-@media (min-width: 1440px) and (max-width: 1920px) {
 }
 
 @media (min-width: 1920px) {
- .app {
-  max-width: 1800px;
-  margin: 0 auto;
- }
+  .app {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 }
