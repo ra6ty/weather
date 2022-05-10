@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import "./ForecastItem.scss"
 
 const ForecastItem = ({responseWeather}) => {
-
     return (
         <div className="forecastContainer">
             <div className="forecast">

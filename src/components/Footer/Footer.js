@@ -8,16 +8,16 @@ const Footer = () => {
             <footer className="footerContent">
                 <p>Ми в соціальних мережах</p>
                 <div className="social-links">
-                    <a href="#">
+                    <a href="#test">
                         <Icon.Facebook size={22}/>
                     </a>
-                    <a href="#">
+                    <a href="##test2">
                         <Icon.Pinterest size={22}/>
                     </a>
-                    <a href="#">
+                    <a href="##test3">
                         <Icon.Messenger size={22}/>
                     </a>
-                    <a href="#">
+                    <a href="##test4">
                         <Icon.Youtube size={22}/>
                     </a>
                 </div>

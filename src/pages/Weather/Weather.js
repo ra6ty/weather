@@ -7,28 +7,26 @@ import Footer from "../../components/Footer/Footer";
 import axios from "axios";
 
 const Weather = () => {
-
     const [inputVal, setInputVal] = useState("")
     const [errorFetch, setErrorFetch] = useState(false)
-    const [responseWeather, setResponseWeather] = useState([])
+    let [responseWeather, setResponseWeather] = useState([])
 
     const findWeather = () => {
         setErrorFetch(false)
+        setResponseWeather([])
 
         if (inputVal.length < 4) {
             return
         }
-
         const value = inputVal.replace(/[^a-zA-Z+(?:-?-)]/, "");
-
-        setResponseWeather([])
 
         axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=8a3c5cbdd404ed9f4d0fe714978162a6`)
             .then(res => {
-                responseWeather.push(res.data.list[0])
-                responseWeather.push(res.data.list[9])
-                responseWeather.push(res.data.list[17])
-                responseWeather.push(res.data.list[25])
+                console.log(responseWeather)
+                setResponseWeather(responseWeather = [...responseWeather, res.data.list[0]])
+                setResponseWeather(responseWeather = [...responseWeather, res.data.list[9]])
+                setResponseWeather(responseWeather = [...responseWeather, res.data.list[17]])
+                setResponseWeather(responseWeather = [...responseWeather, res.data.list[25]])
             })
             .catch(err => {
                     console.log(err)
@@ -37,6 +35,7 @@ const Weather = () => {
                     }
                 }
             )
+
     }
     const style = {
         backgroundImage: "url(./images/bg.jpg)"
@@ -52,7 +51,7 @@ const Weather = () => {
                     {errorFetch ? <p>Такого міста не знайдено</p> : null}
                 </div>
                 <div className="forecast-container">
-                   <ForecastItem responseWeather={responseWeather}/>
+                    {responseWeather.length ? <ForecastItem responseWeather={responseWeather}/> : null}
                 </div>
             </div>
             <Footer/>

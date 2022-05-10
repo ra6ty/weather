@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "./FormInput.scss"
-import axios from "axios";
 
 const FormInput = ({findWeather,setInputVal,inputVal}) => {
-
     return (
         <form className="form">
             <input placeholder="" type="text" value={inputVal} onChange={(e) => setInputVal(e.target.value)}/>
