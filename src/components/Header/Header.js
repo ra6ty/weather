@@ -3,7 +3,6 @@ import "./Header.scss"
 import {Link} from "react-router-dom";
 
 const Header = ({to, value}) => {
-    console.log("12")
     return (
         <header>
             <div className="headerLogo">
