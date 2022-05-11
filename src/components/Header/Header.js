@@ -14,6 +14,8 @@ const Header = ({to, value}) => {
         i18n.changeLanguage("en")
     }
 
+
+
     let style = {
         color: "white"
     }
