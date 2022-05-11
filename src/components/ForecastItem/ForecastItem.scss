@@ -1,6 +1,7 @@
 .forecastContainer {
   display: flex;
   justify-content: space-between;
+  position: relative;
 margin: 1rem;
   & .forecast {
     margin-top: 30px;
@@ -46,12 +47,13 @@ margin: 1rem;
       }
 
       & span {
-        margin-right: 15px;
+        margin-right: 25px;
+        font-size: 16px;
 
         img {
           margin-right: 5px;
           vertical-align: middle;
-          width: 25px;
+          width: 30px;
         }
       }
     }
