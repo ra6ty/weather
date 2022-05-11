@@ -11,22 +11,22 @@ const Main = () => {
 
     return (
         <div>
-            <Header to="weather" value={t("button")}/>
+            <Header to="weather" value={t("find the weather")}/>
             <div className="mainContent">
                 <div className="forecast">
-                    <h2>{t("h2")}</h2>
+                    <h2>{t("weather in the world")}</h2>
                     <div className="forecast-container">
                         <h3>
-                            {t("h3")}
+                            {t("extreme weather conditions")}
                         </h3>
-                        <div><img src="./images/weather1.jpg" className="img1" alt="#"/>
-                            <img src="./images/weth2.jpg" className="img2" alt="#"/>
+                        <div><img src="./images/weather1.jpg" className="img1" alt="rain"/>
+                            <img src="./images/weth2.jpg" className="img2" alt="rain"/>
                         </div>
                     </div>
                     <div className="forecast-container2">
-                        <p> {t("text1")}</p>
-                        <img src="./images/weth3.jpg" alt="#"/>
-                        <p>{t("text2")}</p>
+                        <p> {t("powerful hurricanes")}</p>
+                        <img src="./images/weth3.jpg" alt="clouds"/>
+                        <p>{t("about the weather")}</p>
                     </div>
                     <div>
                         <Carousel variant="dark">
@@ -34,29 +34,29 @@ const Main = () => {
                                 <img
                                     className="d-block w-100 h-50"
                                     src="./images/weth3.jpg"
-                                    alt="First slide"
+                                    alt="First slide clouds"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100 h-50"
                                     src="./images/weth2.jpg"
-                                    alt="Second slide"
+                                    alt="Second slide clouds"
                                 />
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
                                     className="d-block w-100 h-50"
                                     src="./images/weth3.jpg"
-                                    alt="Third slide"
+                                    alt="Third slide rain"
                                 />
                             </Carousel.Item>
                         </Carousel>
                     </div>
                     <div className="forecast-container3">
-                        <p>{t("description")}</p>
-                        <img src="./images/temp.jpg" alt="#"/>
-                        <img src="./images/graf.jpg" alt="#"/>
+                        <p>{t("change сlimate")}</p>
+                        <img src="./images/temp.jpg" alt="glaciers"/>
+                        <img src="./images/graf.jpg" alt="graphics"/>
                     </div>
                 </div>
             </div>

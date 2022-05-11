@@ -8,8 +8,8 @@ const FormInput = ({findWeather,setInputVal,inputVal}) => {
 
     return (
         <form className="form">
-            <input placeholder={t("location")} type="text" value={inputVal} onChange={(e) => setInputVal(e.target.value)}/>
-            <button className='button' onClick={findWeather} type="button">{t("find")}</button>
+            <input placeholder={t("your location")} type="text" value={inputVal} onChange={(e) => setInputVal(e.target.value)}/>
+            <button className='button' onClick={findWeather} type="button">{t("find weather")}</button>
         </form>
     );
 };

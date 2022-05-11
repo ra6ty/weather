@@ -10,18 +10,18 @@ const Footer = () => {
     return (
         <div>
             <footer className="footerContent">
-                <p>{t("social")}х</p>
+                <p>{t("social media")}</p>
                 <div className="social-links">
-                    <a href="#test">
+                    <a target="_blank" href="https://uk-ua.facebook.com/">
                         <Icon.Facebook size={22}/>
                     </a>
-                    <a href="##test2">
+                    <a target="_blank" href="https://www.pinterest.ru/">
                         <Icon.Pinterest size={22}/>
                     </a>
-                    <a href="##test3">
+                    <a target="_blank" href="https://www.messenger.com/">
                         <Icon.Messenger size={22}/>
                     </a>
-                    <a href="##test4">
+                    <a target="_blank" href="https://www.youtube.com/">
                         <Icon.Youtube size={22}/>
                     </a>
                 </div>

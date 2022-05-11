@@ -15,6 +15,7 @@ const Weather = () => {
     let [responseWeather, setResponseWeather] = useState([])
     let [sityLocation, setSityLocation] = useState("")
     const [loading, setLoading] = useState(false)
+    const [checkLengthOfInput, setCheckLengthOfInput] = useState(false)
 
     const findWeather = () => {
         setErrorFetch(false)
@@ -22,6 +23,7 @@ const Weather = () => {
         setSityLocation("")
 
         if (inputVal.length < 3) {
+            setCheckLengthOfInput(true)
             return
         }
         const value = inputVal.replace(/[^a-zA-Z+(?:-?-)]/, "");
@@ -34,12 +36,14 @@ const Weather = () => {
                 setResponseWeather(responseWeather = [...responseWeather, res.data.list[25]])
                 setSityLocation(res.data.city.name)
                 setLoading(false)
+                setCheckLengthOfInput(false)
+
             })
             .catch(err => {
-                    console.log(err)
                     if (err.response.status) {
                         setErrorFetch(true)
                         setLoading(false)
+                        setCheckLengthOfInput(false)
                     }
                 }
             )
@@ -52,12 +56,13 @@ const Weather = () => {
 
     return (
         <div>
-            <Header to="" value={t("button2")}/>
+            <Header to="" value={t("return to home")}/>
             <div style={style} className="Weather">
                 <div className="FormInput">
                     <FormInput value="Знайти" findWeather={findWeather} inputVal={inputVal} setInputVal={setInputVal}
                                setErrorFetch={setErrorFetch}/>
-                    {errorFetch ? <p>{t("err text")}</p> : null}
+                    {errorFetch ? <p>{t("city not found")}</p> : null}
+                    {checkLengthOfInput ? <p>{t("not enough letters")}</p> : null}
                 </div>
                 <div className="forecast-container">
                     <div className="forecastContainer">
@@ -74,9 +79,16 @@ const Weather = () => {
 };
 
 Weather.propTypes = {
-    responseWeather: PropTypes.arrayOf(
-        PropTypes.object
-    ),
+    responseWeather: PropTypes.shape({
+        dt_txt: PropTypes.string,
+        main: PropTypes.shape({
+            temp: PropTypes.number
+        }),
+        pop: PropTypes.number,
+        wind: PropTypes.shape({
+            speed: PropTypes.number
+        })
+    }),
     sityLocation: PropTypes.string
 }
 

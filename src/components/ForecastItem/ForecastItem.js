@@ -28,7 +28,9 @@ ForecastItem.propTypes = {
             temp: PropTypes.number
         }),
         pop: PropTypes.number,
-        wind: PropTypes.object
+        wind: PropTypes.shape({
+            speed:PropTypes.number
+        })
     }),
     sityLocation: PropTypes.string
 }
