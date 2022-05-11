@@ -48,16 +48,16 @@ const Weather = () => {
         backgroundImage: "url(./images/bg.jpg)"
     };
 
-    const {t, i18n} = useTranslation()
+    const {t} = useTranslation()
 
     return (
         <div>
-            <Header to="" value={i18n.t("button2")}/>
+            <Header to="" value={t("button2")}/>
             <div style={style} className="Weather">
                 <div className="FormInput">
                     <FormInput value="Знайти" findWeather={findWeather} inputVal={inputVal} setInputVal={setInputVal}
                                setErrorFetch={setErrorFetch}/>
-                    {errorFetch ? <p>{i18n.t("err text")}</p> : null}
+                    {errorFetch ? <p>{t("err text")}</p> : null}
                 </div>
                 <div className="forecast-container">
                     <div className="forecastContainer">

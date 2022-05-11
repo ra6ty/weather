@@ -5,12 +5,12 @@ import {useTranslation} from "react-i18next";
 
 const Footer = () => {
 
-    const {t, i18n} = useTranslation()
+    const {t} = useTranslation()
 
     return (
         <div>
             <footer className="footerContent">
-                <p>{i18n.t("social")}х</p>
+                <p>{t("social")}х</p>
                 <div className="social-links">
                     <a href="#test">
                         <Icon.Facebook size={22}/>

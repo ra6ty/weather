@@ -14,8 +14,6 @@ const Header = ({to, value}) => {
         i18n.changeLanguage("en")
     }
 
-
-
     let style = {
         color: "white"
     }
@@ -24,11 +22,11 @@ const Header = ({to, value}) => {
         <header>
             <div className="headerLogo">
                 <img src="./images/logo.png" alt="logo"/>
-                <h1>{i18n.t("h1")}</h1>
+                <h1>{t("h1")}</h1>
             </div>
             <Link to={`/` + to} className='link' type="button">{value}</Link>
             <div className="changeLang">
-                <p>{i18n.t("Choose language")}</p>
+                <p>{t("Choose language")}</p>
                 {i18n.language === "uk" ? <button onClick={changeLangUA} style={style}>UA</button> :
                     <button onClick={changeLangUA}>UA</button>}
                 {i18n.language === "en" ? <button onClick={changeLangEN} style={style}>EN</button> :

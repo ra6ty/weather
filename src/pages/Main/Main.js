@@ -7,26 +7,26 @@ import {useTranslation} from "react-i18next";
 
 const Main = () => {
 
-    const {t, i18n} = useTranslation()
+    const {t} = useTranslation()
 
     return (
         <div>
-            <Header to="weather" value={i18n.t("button")}/>
+            <Header to="weather" value={t("button")}/>
             <div className="mainContent">
                 <div className="forecast">
-                    <h2>{i18n.t("h2")}</h2>
+                    <h2>{t("h2")}</h2>
                     <div className="forecast-container">
                         <h3>
-                            {i18n.t("h3")}
+                            {t("h3")}
                         </h3>
                         <div><img src="./images/weather1.jpg" className="img1" alt="#"/>
                             <img src="./images/weth2.jpg" className="img2" alt="#"/>
                         </div>
                     </div>
                     <div className="forecast-container2">
-                        <p> {i18n.t("text1")}</p>
+                        <p> {t("text1")}</p>
                         <img src="./images/weth3.jpg" alt="#"/>
-                        <p>{i18n.t("text2")}</p>
+                        <p>{t("text2")}</p>
                     </div>
                     <div>
                         <Carousel variant="dark">
@@ -54,7 +54,7 @@ const Main = () => {
                         </Carousel>
                     </div>
                     <div className="forecast-container3">
-                        <p>{i18n.t("description")}</p>
+                        <p>{t("description")}</p>
                         <img src="./images/temp.jpg" alt="#"/>
                         <img src="./images/graf.jpg" alt="#"/>
                     </div>
