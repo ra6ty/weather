@@ -1,0 +1,15 @@
+{
+  "Choose language":"Choose language:",
+  "h1":"Weather in your city",
+  "h2": "About the weather in the world",
+  "h3": "Extreme weather conditions, such as tornadoes, hurricanes and cyclones, have swept the planet in recent years. They cause significant damage and casualties.",
+  "text1": "Heavy hurricanes have recently engulfed Britain. Last month, Spain and France suffered from severe storms, and Australia from extreme heat, which led to massive forest fires.",
+  "text2" : "It is impossible to tame the weather, but you can predict and mitigate its extreme manifestations. And this is where the weather forecast comes to the rescue. How is it made? And why is it not always accurate?",
+  "description": "Climate change and global warming make beach holidays possible even in Alaska.",
+  "button": "Find out the weather",
+  "button2": "Come back",
+  "err text": "No such city found",
+  "find": "Find",
+  "location": "Your location",
+  "social": "We are in a social network"
+}

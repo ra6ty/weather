@@ -1,12 +1,16 @@
 import React from 'react';
 import * as Icon from "react-bootstrap-icons";
 import "./Footer.scss"
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+
+    const {t, i18n} = useTranslation()
+
     return (
         <div>
             <footer className="footerContent">
-                <p>Ми в соціальних мережах</p>
+                <p>{i18n.t("social")}х</p>
                 <div className="social-links">
                     <a href="#test">
                         <Icon.Facebook size={22}/>
